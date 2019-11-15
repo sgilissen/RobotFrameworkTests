@@ -18,3 +18,7 @@ calculate sum multiple
 calculate square root
     calculate square root   ${36}
     result should be    ${6}
+
+test should fail
+    calculate sum  ${10}    ${80}   ${28}   ${82}
+    result should be  ${201}

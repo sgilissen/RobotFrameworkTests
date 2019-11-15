@@ -12,6 +12,8 @@ import math
 def get_sum(*args):
     sum = 0
     for value in args:
+        print("MEH")
+        print(value)
         sum += value
     return sum
 

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on linux)" generated="20191115 17:04:33.981" rpa="false">
+<suite id="s1" name="Gherkintest &amp; Test">
+<suite id="s1-s1" name="Gherkintest" source="/home/sgilissen/gitdir/RobotFrameworkTests/gherkintest.robot">
+<test id="s1-s1-t1" name="Calc product">
+<kw name="When I calculate the product of ${30} and ${40}">
+<kw name="Calculate Product" library="MathTestLibrary">
+<arguments>
+<arg>${value1}</arg>
+<arg>${value2}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.009" endtime="20191115 17:04:34.009"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.008" endtime="20191115 17:04:34.009"></status>
+</kw>
+<kw name="Then result is ${1200}">
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.009" endtime="20191115 17:04:34.010"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.009" endtime="20191115 17:04:34.010"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.008" endtime="20191115 17:04:34.010" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Calc square root">
+<kw name="When I calculate the square root of ${36}">
+<kw name="Calculate Square Root" library="MathTestLibrary">
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.011" endtime="20191115 17:04:34.011"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.010" endtime="20191115 17:04:34.011"></status>
+</kw>
+<kw name="Then result is ${6}">
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.011" endtime="20191115 17:04:34.011"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.011" endtime="20191115 17:04:34.012"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.010" endtime="20191115 17:04:34.012" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191115 17:04:34.004" endtime="20191115 17:04:34.012"></status>
+</suite>
+<suite id="s1-s2" name="Test" source="/home/sgilissen/gitdir/RobotFrameworkTests/test.robot">
+<test id="s1-s2-t1" name="calculate product">
+<kw name="Calculate Product" library="MathTestLibrary">
+<arguments>
+<arg>${8}</arg>
+<arg>${8}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.015" endtime="20191115 17:04:34.016"></status>
+</kw>
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${64}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.016" endtime="20191115 17:04:34.017"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.015" endtime="20191115 17:04:34.017" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="calculate sum">
+<kw name="Calculate Sum" library="MathTestLibrary">
+<arguments>
+<arg>${8}</arg>
+<arg>${8}</arg>
+</arguments>
+<msg timestamp="20191115 17:04:34.018" level="INFO">MEH
+8
+MEH
+8</msg>
+<status status="PASS" starttime="20191115 17:04:34.018" endtime="20191115 17:04:34.018"></status>
+</kw>
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${16}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.018" endtime="20191115 17:04:34.018"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.017" endtime="20191115 17:04:34.019" critical="yes"></status>
+</test>
+<test id="s1-s2-t3" name="calculate sum multiple">
+<kw name="Calculate Sum" library="MathTestLibrary">
+<arguments>
+<arg>${10}</arg>
+<arg>${10}</arg>
+<arg>${10}</arg>
+<arg>${12}</arg>
+</arguments>
+<msg timestamp="20191115 17:04:34.019" level="INFO">MEH
+10
+MEH
+10
+MEH
+10
+MEH
+12</msg>
+<status status="PASS" starttime="20191115 17:04:34.019" endtime="20191115 17:04:34.020"></status>
+</kw>
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${42}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.020" endtime="20191115 17:04:34.020"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.019" endtime="20191115 17:04:34.020" critical="yes"></status>
+</test>
+<test id="s1-s2-t4" name="calculate square root">
+<kw name="Calculate Square Root" library="MathTestLibrary">
+<arguments>
+<arg>${36}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.021" endtime="20191115 17:04:34.021"></status>
+</kw>
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${6}</arg>
+</arguments>
+<status status="PASS" starttime="20191115 17:04:34.021" endtime="20191115 17:04:34.021"></status>
+</kw>
+<status status="PASS" starttime="20191115 17:04:34.020" endtime="20191115 17:04:34.021" critical="yes"></status>
+</test>
+<test id="s1-s2-t5" name="test should fail">
+<kw name="Calculate Sum" library="MathTestLibrary">
+<arguments>
+<arg>${10}</arg>
+<arg>${80}</arg>
+<arg>${28}</arg>
+<arg>${82}</arg>
+</arguments>
+<msg timestamp="20191115 17:04:34.022" level="INFO">MEH
+10
+MEH
+80
+MEH
+28
+MEH
+82</msg>
+<status status="PASS" starttime="20191115 17:04:34.022" endtime="20191115 17:04:34.022"></status>
+</kw>
+<kw name="Result Should Be" library="MathTestLibrary">
+<arguments>
+<arg>${201}</arg>
+</arguments>
+<msg timestamp="20191115 17:04:34.023" level="FAIL">200 != 201</msg>
+<status status="FAIL" starttime="20191115 17:04:34.022" endtime="20191115 17:04:34.023"></status>
+</kw>
+<status status="FAIL" starttime="20191115 17:04:34.021" endtime="20191115 17:04:34.023" critical="yes">200 != 201</status>
+</test>
+<doc>Example robot file to test the Robot Framework</doc>
+<status status="FAIL" starttime="20191115 17:04:34.013" endtime="20191115 17:04:34.024"></status>
+</suite>
+<status status="FAIL" starttime="20191115 17:04:33.982" endtime="20191115 17:04:34.025"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="1">Critical Tests</stat>
+<stat pass="6" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="1" id="s1" name="Gherkintest &amp; Test">Gherkintest &amp; Test</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Gherkintest">Gherkintest &amp; Test.Gherkintest</stat>
+<stat pass="4" fail="1" id="s1-s2" name="Test">Gherkintest &amp; Test.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
